@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ilmari plugin catalog",
+  "type": "object",
+  "required": ["plugins"],
+  "additionalProperties": false,
+  "properties": {
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "description", "repo"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+          "description": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "repo": {
+            "type": "string",
+            "description": "Any url git clone accepts: https://, ssh://, git@host:path",
+            "pattern": "^(https://|ssh://|[A-Za-z0-9._-]+@[A-Za-z0-9._-]+:)"
+          },
+          "entry": {
+            "type": "string",
+            "description": "Committed entry file relative to the repo root (default dist/index.js, then package.json main)",
+            "pattern": "^(?!\\.\\.)(?!/).+\\.(js|mjs)$"
+          },
+          "homepage": { "type": "string", "format": "uri" },
+          "capabilities": {
+            "type": "array",
+            "description": "Informational only; the operator approves what static inspect of the entry actually shows",
+            "items": { "enum": ["net", "fs", "git", "exec", "secrets"] },
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  }
+}

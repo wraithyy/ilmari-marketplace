@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    {
+      "name": "ilmari-plugin-jira",
+      "description": "Jira Cloud: webhook trigger for issues, comment and transition nodes, issue lookup tool",
+      "repo": "https://github.com/wraithyy/ilmari-plugin-jira.git",
+      "entry": "dist/index.js",
+      "homepage": "https://github.com/wraithyy/ilmari-plugin-jira",
+      "capabilities": ["net", "secrets"]
+    },
+    {
+      "name": "ilmari-plugin-confluence",
+      "description": "Confluence Cloud: space pages as a knowledge source, CQL search tool, create/update page output node",
+      "repo": "https://github.com/wraithyy/ilmari-plugin-confluence.git",
+      "entry": "dist/index.js",
+      "homepage": "https://github.com/wraithyy/ilmari-plugin-confluence",
+      "capabilities": ["net", "secrets"]
+    }
+  ]
+}
