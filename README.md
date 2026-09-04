@@ -47,19 +47,6 @@ Requirements for the plugin repository:
 CI runs `node scripts/validate.mjs`: schema checks plus `git ls-remote` on every
 repository to confirm it is reachable and tagged.
 
-## Plugins hosted here
-
-A plugin may also live in this repository under `plugins/<name>/`, with a
-catalog entry whose `repo` is this repository and whose `entry` is the
-subdirectory path — see `plugins/jenkins`. ilmari clones the whole catalog in
-that case and loads the one entry file.
-
-The tag is then shared: every plugin hosted here installs at this
-repository's newest `v*` tag, so releasing a fix to one of them means tagging
-the catalog again, and `ilmari plugin outdated` cannot tell them apart. Keep
-this for small plugins maintained alongside the catalog; anything that needs
-its own release cadence belongs in its own repository.
-
 ## Using another catalog
 
 Anyone can host a catalog with the same schema, for example an internal one on

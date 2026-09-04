@@ -1,3 +1,0 @@
-node_modules/
-# plugins/*/dist is deliberately NOT ignored: ilmari installs the committed
-# entry file and never builds a plugin.

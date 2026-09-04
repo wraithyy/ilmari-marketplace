@@ -19,9 +19,9 @@
     {
       "name": "ilmari-plugin-jenkins",
       "description": "Jenkins: run a job as a verification step, start a task from a failed build, read console logs",
-      "repo": "https://github.com/wraithyy/ilmari-marketplace.git",
-      "entry": "plugins/jenkins/dist/index.js",
-      "homepage": "https://github.com/wraithyy/ilmari-marketplace/tree/main/plugins/jenkins",
+      "repo": "https://github.com/Hajan39/ilmari-plugin-jenkins.git",
+      "entry": "dist/index.js",
+      "homepage": "https://github.com/Hajan39/ilmari-plugin-jenkins",
       "capabilities": ["net", "secrets"]
     }
   ]
