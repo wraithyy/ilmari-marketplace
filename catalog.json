@@ -6,7 +6,10 @@
       "repo": "https://github.com/wraithyy/ilmari-plugin-jira.git",
       "entry": "dist/index.js",
       "homepage": "https://github.com/wraithyy/ilmari-plugin-jira",
-      "capabilities": ["net", "secrets"]
+      "capabilities": [
+        "net",
+        "secrets"
+      ]
     },
     {
       "name": "ilmari-plugin-confluence",
@@ -14,7 +17,10 @@
       "repo": "https://github.com/wraithyy/ilmari-plugin-confluence.git",
       "entry": "dist/index.js",
       "homepage": "https://github.com/wraithyy/ilmari-plugin-confluence",
-      "capabilities": ["net", "secrets"]
+      "capabilities": [
+        "net",
+        "secrets"
+      ]
     },
     {
       "name": "ilmari-plugin-office365",
@@ -22,7 +28,23 @@
       "repo": "https://github.com/Hajan39/ilmari-plugin-office365.git",
       "entry": "dist/index.js",
       "homepage": "https://github.com/Hajan39/ilmari-plugin-office365",
-      "capabilities": ["net", "fs", "secrets"]
+      "capabilities": [
+        "net",
+        "fs",
+        "secrets"
+      ]
+    },
+    {
+      "name": "ilmari-plugin-smtp",
+      "description": "Email through any SMTP relay: a step, an agent tool and a notification channel, with presets for Gmail, Microsoft 365, Outlook, Seznam and iCloud",
+      "repo": "https://github.com/Hajan39/ilmari-plugin-smtp.git",
+      "entry": "dist/index.js",
+      "homepage": "https://github.com/Hajan39/ilmari-plugin-smtp",
+      "capabilities": [
+        "net",
+        "fs",
+        "secrets"
+      ]
     }
   ]
 }
