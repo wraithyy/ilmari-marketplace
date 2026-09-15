@@ -17,6 +17,14 @@
       "capabilities": ["net", "secrets"]
     },
     {
+      "name": "ilmari-plugin-sonarqube",
+      "description": "SonarQube (self-hosted): quality gate and open issues as workflow steps and agent tools",
+      "repo": "https://github.com/Hajan39/ilmari-plugin-sonarqube.git",
+      "entry": "dist/index.js",
+      "homepage": "https://github.com/Hajan39/ilmari-plugin-sonarqube",
+      "capabilities": ["net", "secrets"]
+    },
+    {
       "name": "ilmari-plugin-office365",
       "description": "Microsoft 365 over Graph: send mail, read calendar, search OneDrive/SharePoint files, post into Teams (device-code sign-in)",
       "repo": "https://github.com/Hajan39/ilmari-plugin-office365.git",
