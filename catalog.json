@@ -17,6 +17,13 @@
       "capabilities": ["net", "secrets"]
     },
     {
+      "name": "ilmari-plugin-jenkins",
+      "description": "Jenkins: run a job as a verification step, start a task from a failed build, read console logs",
+      "repo": "https://github.com/Hajan39/ilmari-plugin-jenkins.git",
+      "entry": "dist/index.js",
+      "homepage": "https://github.com/Hajan39/ilmari-plugin-jenkins",
+      "capabilities": ["net", "secrets"]
+    },{
       "name": "ilmari-plugin-sonarqube",
       "description": "SonarQube (self-hosted): quality gate and open issues as workflow steps and agent tools",
       "repo": "https://github.com/Hajan39/ilmari-plugin-sonarqube.git",
