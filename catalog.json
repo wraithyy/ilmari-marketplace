@@ -70,13 +70,14 @@
     },
     {
       "name": "ilmari-plugin-playwright",
-      "description": "Playwright: run e2e tests headless as a workflow step, shard across parallel map items, agent-readable failure report, browser install step",
+      "description": "Playwright: run e2e tests headless as a workflow step, shard across parallel map items, agent-readable failure report, on-demand app screenshots, browser install step",
       "repo": "https://github.com/wraithyy/ilmari-plugin-playwright.git",
       "entry": "dist/index.js",
       "homepage": "https://github.com/wraithyy/ilmari-plugin-playwright",
       "capabilities": [
         "exec",
-        "fs"
+        "fs",
+        "net"
       ]
     }
   ]
