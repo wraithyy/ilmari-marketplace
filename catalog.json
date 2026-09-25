@@ -78,6 +78,17 @@
         "exec",
         "fs"
       ]
+    },
+    {
+      "name": "ilmari-plugin-loki",
+      "description": "Grafana Loki: log sink that pushes every task event to a self-hosted Loki, with basic/bearer auth and multi-tenant support",
+      "repo": "https://github.com/wraithyy/ilmari-plugin-loki.git",
+      "entry": "dist/index.js",
+      "homepage": "https://github.com/wraithyy/ilmari-plugin-loki",
+      "capabilities": [
+        "net",
+        "secrets"
+      ]
     }
   ]
 }
