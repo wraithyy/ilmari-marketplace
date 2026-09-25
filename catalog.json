@@ -80,6 +80,17 @@
         "net",
         "secrets"
       ]
+    },
+    {
+      "name": "ilmari-plugin-jev",
+      "description": "TypeSafe Jev via OpenRouter: the jev step, a quick decision that picks one of your options from a piece of text without running an agent",
+      "repo": "https://github.com/wraithyy/ilmari-plugin-jev.git",
+      "entry": "dist/index.js",
+      "homepage": "https://github.com/wraithyy/ilmari-plugin-jev",
+      "capabilities": [
+        "net",
+        "secrets"
+      ]
     }
   ]
 }
